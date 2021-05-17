@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "Product Sans";
+  src: url("https://fonts.gstatic.com/s/productsans/v7/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2")
+    format("woff2");
+}
+
+#img, #mail, #chricon, #hamb {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: Arial;
+  font-size: 0.75em;
+}
+
+#mail:hover, #img:hover{
+  text-decoration: underline;
+}
+#navbar {
+  margin-top: 0.6em;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0.75em;
+}
+#hamb:hover,#user:hover {
+	border-radius: 50%;
+  	background-color: #efefef;
+	background-size: auto;
+}
+.GOOGLE {
+  display: flex;
+}
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10em;
+  height: 1em;
+}
+.google {
+  width: 100%;
+  display: flex;
+  font-family: "Product Sans";
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 7em;
+  font-size: 5em;
+  font-weight: 600;
+}
+.G {
+  color: #4285f4;
+}
+.O {
+  color: #ea4335;
+}
+.o {
+  color: #fbbc05;
+}
+.g {
+  color: #4285f4;
+}
+.l {
+  color: #34a853;
+}
+.e {
+  color: #ea4335;
+}
+#research {
+  opacity: 70%;
+  font-size: 17px;
+  font-family: "Product Sans";
+  padding-left: 50px;
+  margin-right: 70px;
+  margin-top: 20px;
+  width: 100%;
+  height: 50%;
+  border-radius: 20px;
+  border-width: 0px;
+  box-shadow: 0px 1px 10px 2px #c5c5c5;
+}
+#research:focus {
+  outline: none;
+}
+#user{ 
+  position: relative;
+  top: -5px;
+  right: -5px;
+  shape-outside: url(https://serc.carleton.edu/download/images/54334/empty_user_icon_256.v2.png);
+  width: 25px;
+  height: 25px;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 33px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-family: Arial;
+}
+.icon:hover {
+  background-color: #c6c6c6;
+  width: 90%;
+  border-radius: 5px;
+}
+.icon2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.space {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#personalizar{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 1em;
+  border-width: 0px;
+  box-shadow: 1px 3px 10px 2px #c5c5c5;
+  margin-right: 0.75em;
+  margin-bottom: 0.5em;
+  background-color: white;
+  color: #044bd9;
+  width: 10em;
+  height: 2em;
+  font-size: 1em;
+}
+
+#personalizar:focus {
+  outline: none;
+}
+
+#personalizar:hover {
+  background-color: rgba(193, 255, 243, 100);
+}
+
+.input-icons{
+  position: relative;
+  left: 69px;
+  bottom: -8px;
+  transform: scale(0.25);
+}
+.input-icons-2{
+  position: relative;
+  transform: scale(0.25);
+  bottom: -8px;
+  left: -125px;
+  opacity: 40%;
+}
+.iconsgrid{
+  display: grid;
+  grid-template-columns: 120px 120px 120px 120px 120px;
+  justify-content: center;
+  position: relative;
+  left: -20px;
+  bottom: 200px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.foot {
+  font-family: Roboto;
+}
+.contact {
+  width: 100%;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footerlink{
+  color: black;
+  text-decoration:none;
+}
+
+@media screen and (max-width:900px){
+  
+  #research{
+    margin-left: 15px;
+    width: 47%;
+
+  }
+  .icon{
+    font-size: 15px;
+  }
+  .iconsgrid{
+    grid-template-columns: 80px 80px 80px 80px 80px;
+  }
+  
+}
+
+@media screen and (max-width:768px){
+  
+  #research{
+    font-size: 13px;
+    margin-left: 13px;
+    width: 40%;
+
+  }
+  .icon{
+    font-size: 12px;
+  }
+  .iconsgrid{
+    grid-template-columns: 65px 65px 65px 65px 65px;
+  }
+  
+}
+
+@media screen and (max-width:600px){
+  
+  #research{
+    font-size: 10px;
+    margin-left: 13px;
+    width: 37%;
+
+  }
+  .icon{
+    font-size: 10px;
+  }
+  .iconsgrid{
+    grid-template-columns: 55px 55px 55px 55px 55px;
+  }
+  
+}
