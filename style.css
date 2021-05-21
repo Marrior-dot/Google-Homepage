@@ -13,13 +13,7 @@ body{
 	display: flex;
 	justify-content: space-evenly;
 }
-/*.Theme:focus{
-	border-color: blue;
-	border-width: 20px;
-	border-style: solid;
-}
-*/
-.Personalized{
+#PersonalizedBox{
 	width: 60%;
 	z-index: 999999;
 	position: absolute;
@@ -28,6 +22,7 @@ body{
 	background-color: black;
 	font-family: Noto Sans;
 	background-color: white;
+	filter: none;
 }
 #img, #mail, #chricon, #hamb {
   margin-top: 20px;
