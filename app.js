@@ -1,7 +1,14 @@
 let person = document.getElementById('personalizar');
+let body = document.getElementById('documentB');
+let listOfButtons = document.getElementsByClassName('borderA');
+
+let popUps = {
+
+}
 person.onclick = function(){
 	let main = document.getElementById("documentM");
-	console.log(main);
+	main.previousElementSibling.style.filter = 'blur(6px)';
+
 	for (var i = 0;i< main.childElementCount;i=i+1){
 		main.children[i].style.filter = 'blur(6px)';
 		if (i === 0){
@@ -10,8 +17,4 @@ person.onclick = function(){
 	}
 		main.firstElementChild.style.display = 'flex';
 		person.disabled = true;
-	/*let lightB = document.getElementById("lightBTheme");
-/*	tab.innerHTML = "<fieldset style = 'border-radius: 0.5em;border-width: 1px'> <h2 style ='text-align: center'>Cor e tema<i class='fas fa-adjust'></i></h2><section id = 'PField' > <div onmouseover ='changeBorder()' class = 'Theme' style = 'background-color: black; width: 4em; height: 4em; border-radius: 50%'></div> <div class = 'Theme' id = 'lightBTheme' onmouseover ='changeBorder()' style = 'background-color: LightBlue; width: 4em; height: 4em; border-radius: 50%'></div></section>";
-	tab.innerHTML += "</fieldset>"
-*/
 }
