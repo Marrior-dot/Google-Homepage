@@ -3,7 +3,17 @@ let body = document.getElementById('documentB');
 let listOfButtons = document.getElementsByClassName('borderA');
 
 let popUps = {
+	BlackTheme: function BlackTheme(){
+		document.getElementById("documentB").style.backgroundColor = 'black';
+		document.getElementById('mail').style.color = 'white';
+		document.getElementById('img').style.color = 'white';	
+		document.getElementById('user').style.backgroundColor = 'white';
+		document.getElementById('hamb').style.color = 'white';
 
+		for(var j=0; j<document.getElementsByClassName('GOOGLE').childElementCount;j = j+1){
+			document.getElementsByClassName('GOOGLE').children[j].style.color = 'white';
+		}
+	}
 }
 person.onclick = function(){
 	let main = document.getElementById("documentM");
@@ -18,3 +28,5 @@ person.onclick = function(){
 		main.firstElementChild.style.display = 'flex';
 		person.disabled = true;
 }
+
+listOfButtons[0].onclick = popUps.BlackTheme;
