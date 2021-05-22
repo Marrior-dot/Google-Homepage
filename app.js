@@ -3,6 +3,9 @@ let body = document.getElementById('documentB');
 let listOfButtons = document.getElementsByClassName('borderA');
 
 let popUps = {
+	salvar: function buttonSave(){
+
+	},
 	BlackTheme: function BlackTheme(){
 		document.getElementById("documentB").style.backgroundColor = 'black';
 		document.getElementById('mail').style.color = 'white';

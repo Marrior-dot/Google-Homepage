@@ -21,6 +21,16 @@ body{
 	flex-direction: column;
 	padding-bottom: 2em;
 }
+#checkpoint{
+	width: 30%;
+	font-family: monospace;
+	margin: 0 auto;
+	font-size: 1.5em;
+	margin-top: 1em;
+	background-color: black;
+	color: white;
+	border-radius: 0.5em;
+}
 #Btheme{
 	height: 4em;
 	width: 4em;
