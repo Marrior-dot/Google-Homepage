@@ -1,10 +1,18 @@
 let person = document.getElementById('personalizar');
 let body = document.getElementById('documentB');
 let listOfButtons = document.getElementsByClassName('borderA');
+let svButton = document.getElementById('checkpoint');
+let main = document.getElementById("documentM");
+let GLetters = document.querySelectorAll('.Tchange');
 
 let popUps = {
 	salvar: function buttonSave(){
-
+		main.firstElementChild.style.display ='none';
+		person.disabled = false;
+			for (var k = 0;k< main.childElementCount;k=k+1){
+				main.children[k].style.filter = 'none';
+						}
+		main.previousElementSibling.style.filter = 'none';
 	},
 	BlackTheme: function BlackTheme(){
 		document.getElementById("documentB").style.backgroundColor = 'black';
@@ -12,16 +20,17 @@ let popUps = {
 		document.getElementById('img').style.color = 'white';	
 		document.getElementById('user').style.backgroundColor = 'white';
 		document.getElementById('hamb').style.color = 'white';
-
-		for(var j=0; j<document.getElementsByClassName('GOOGLE').childElementCount;j = j+1){
-			document.getElementsByClassName('GOOGLE').children[j].style.color = 'white';
+		document.querySelector('.foot').style.color = 'white';
+		document.querySelector('.contact').style.color = 'white'
+		document.querySelector('.contact').children[1].style.color = 'white'
+		document.querySelector('.contact').children[2].style.color = 'white'
+			for(var j = 0;j < GLetters.length;j = j+1 ){
+			GLetters[j].style.color = 'white';
+		}
 		}
 	}
-}
 person.onclick = function(){
-	let main = document.getElementById("documentM");
 	main.previousElementSibling.style.filter = 'blur(6px)';
-
 	for (var i = 0;i< main.childElementCount;i=i+1){
 		main.children[i].style.filter = 'blur(6px)';
 		if (i === 0){
@@ -33,3 +42,4 @@ person.onclick = function(){
 }
 
 listOfButtons[0].onclick = popUps.BlackTheme;
+svButton.onclick = popUps.salvar; 
