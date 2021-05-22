@@ -200,7 +200,7 @@ body{
 }
 
 #personalizar:focus {
-  outline: none;
+	outline: none;
 }
 
 #personalizar:hover {
