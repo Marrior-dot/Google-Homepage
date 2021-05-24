@@ -8,26 +8,61 @@ body{
 	padding: 0 auto;
 	box-sizing: border-box;
 }
-#PField{
-	padding-bottom: 2em;
-	display: flex;
-	justify-content: space-evenly;
-}
-/*.Theme:focus{
-	border-color: blue;
-	border-width: 20px;
-	border-style: solid;
-}
-*/
-.Personalized{
+#PersonalizedBox{
 	width: 60%;
 	z-index: 999999;
 	position: absolute;
 	top: 42%;
-	left: 20%;
-	background-color: black;
-	font-family: Noto Sans;
 	background-color: white;
+	left: 20%;
+	font-family: Noto Sans;
+	border-radius: 0.5em;
+	border-width: 0.1em;
+	flex-direction: column;
+	padding-bottom: 2em;
+}
+#checkpoint{
+	width: 30%;
+	font-family: monospace;
+	margin: 0 auto;
+	font-size: 1.5em;
+	margin-top: 1em;
+	background-color: black;
+	color: white;
+	border-radius: 0.5em;
+}
+#Btheme{
+	height: 4em;
+	width: 4em;
+	border-radius: 50%;
+	background-color: black;
+	border-width: 0px;
+
+}
+#Btheme:hover, #BLtheme:hover, #Defaulttheme:hover{
+	border-width: 0.4em;
+	border-color: #4693DB;
+	border-style: solid;
+}
+#BLtheme{
+	height: 4em;
+	width: 4em;
+	border-radius: 50%;
+	background-color: LightBlue;
+	border-width: 0px;
+}
+#Defaulttheme{
+	height: 4em;
+	width: 4em;
+	border-radius: 50%;
+	background-color: white;
+	border-width: 0.1em;
+	border-color: black;
+	border-style: solid;
+}
+#ThemeOptions{
+	display: flex;
+	justify-content: space-evenly;
 }
 #img, #mail, #chricon, #hamb {
   margin-top: 20px;
@@ -165,7 +200,7 @@ body{
 }
 
 #personalizar:focus {
-  outline: none;
+	outline: none;
 }
 
 #personalizar:hover {
